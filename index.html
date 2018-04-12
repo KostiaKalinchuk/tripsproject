@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trip</title>
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/daterangepicker.js"></script>
+</head>
+<body>
+<div class="header">
+    <img src="img/plane.png" class="logo">
+    <span class="title">trip</span>
+    <div class="sl">
+        <div class="sl__slide"><img src="img/slider1.png">
+            <span class="sl__text">
+                <h3 class="sl__zag">London</h3>
+                <p class="sl__desc">from</p>
+                <p class="sl__desc2">$1000</p>
+                <a class="more" href="#"><span>Learn More</span></a>
+            </span>
+        </div>
+        <div class="sl__slide"><img src="img/slider2.png">
+            <span class="sl__text">
+                <h3 class="sl__zag">Goa</h3>
+                <p class="sl__desc">from</p>
+                <p class="sl__desc2">$1500</p>
+                <a class="more" href="#"><span>Learn More</span></a>
+            </span>
+        </div>
+        <div class="sl__slide"><img src="img/slider3.png">
+            <span class="sl__text">
+                <h3 class="sl__zag">Italy</h3>
+                <p class="sl__desc">from</p>
+                <p class="sl__desc2">$1800</p>
+                <a class="more" href="#"><span>Learn More</span></a>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <ul class="nav__menu">
+        <li class="col-md"><a href="#">about</a></li>
+        <li class="col-md"><a href="#">hot tours</a></li>
+        <li class="col-md"><a href="#">special offers</a></li>
+        <li class="col-md"><a href="#">blog</a></li>
+        <li class="col-md"><a href="#">contacts</a></li>
+    </ul>
+    <div class="row trip">
+        <li class="col-md shadow">
+            <img src="img/barcelona.png">
+            <h5>Barcelona</h5>
+            <p class="block__desc">from</p>
+            <p class="block__desc2">$ 1000</p>
+            <a href="#"><span>Learn More</span></a>
+        </li>
+        <li class="col-md shadow"><img src="img/goa.png">
+            <h5>Goa</h5>
+            <p class="block__desc">from</p>
+            <p class="block__desc2">$ 1500</p>
+            <a href="#"><span>Learn More</span></a>
+        </li>
+        <li class="col-md shadow"><img src="img/paris.png">
+            <h5>Paris</h5>
+            <p class="block__desc">from</p>
+            <p class="block__desc2">$ 1600</p>
+            <a href="#"><span>Learn More</span></a>
+        </li>
+    </div>
+    <div class="row forms">
+        <div class="col-md-6 booking__form">
+            <h6>Booking Form</h6>
+            <div class="booking__form__name">
+                <input type="text" placeholder="Name:"><br>
+                <input type="text" placeholder="Country:">
+            </div>
+            <div class="booking__form__country">
+                <input type="email" placeholder="Email:"><br>
+                <input type="text" placeholder="Hotel:">
+            </div>
+
+            <div class="in">
+                <span>Check-in</span>
+                <div id="reportrange" class="date">
+                    <span></span><i class="glyphicon glyphicon-calendar icon"></i>&nbsp;
+                </div>
+            </div>
+            <div class="out">
+                <span>Check-out</span>
+                <div id="reportrange2" class="date">
+                    <span></span><i class="glyphicon glyphicon-calendar icon"></i>&nbsp;
+                </div>
+            </div>
+            <br>
+            <div class="comfort">
+                <p>Comfort</p>
+                <input type="radio" name="comfort" id="cheap" checked>
+                <label for="cheap">
+                    <span>Cheap</span>
+                </label>
+                <input type="radio" name="comfort" id="standart">
+                <label for="standart">
+                    <span>Standart</span>
+                </label>
+                <input type="radio" name="comfort" id="lux">
+                <label for="lux">
+                    <span>Lux</span>
+                </label>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="selects">
+                        <span>Adults</span>
+                        <div class="select__main">
+                            <p></p>
+                            <select name="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="selects">
+                        <span>Rooms</span>
+                        <div class="select__main">
+                            <p></p>
+                            <select name="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="selects">
+                        <span>Children</span>
+                        <div class="select__main">
+                            <p></p>
+                            <select name="">
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <textarea name="mesage" placeholder="Message:"></textarea>
+            <input type="submit" value="Submit">
+        </div>
+        <div class="col-md-6 welcome">
+            <h6>Welcome</h6>
+            <div class="welcome__text">
+                <div class="col-sm-6 pull-left">
+                    <img src="img/welcome.png" class="img-responsive"/>
+                </div>
+                <p>Lorem ipsum dolor sit amet, delenit menandri democritum cum an,
+                    justo nostrud urbanitas vim at. Id sed libris impetus.
+                    His ne magna omnium scaevola. Eu sea detracto gubergren moderatius,
+                    est in labores salutatus. Populo dolores mei te, percipit nominati an nec,
+                    has exerci deserunt liberavisse ut. Quidam veritus constituto eu sea,
+                    paulo dictas propriae ut has, mel ne sumo velit graece.
+                    Quidam eirmod feugiat usu ei, no illum eruditi gubergren quo.
+                    Ignota tamquam recteque sit ea. Ut vis probatus disputando,
+                    homero quidam detraxit mea ea.
+                </p>
+            </div>
+            <div class="quotes">
+                <h6>Clients’ Quotes</h6>
+                <div class="col-sm-3">
+                    <img src="img/avatar.png"/>
+                </div>
+                <p>Duis massa elit, auctor non pellentesque vel,
+                    aliquet sit amet erat. Nullam eget dignissim nisi,
+                    aliquam feugiat nibh.
+                </p>
+                <a href="#">Miranda Brown</a><br>
+                <input type="button" value="More">
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <h6>Latest News</h6>
+        <div class="row">
+            <li class="col-md-4">
+                <div class="col-md-3 news__date">
+                    <p>10<br>Jan</p>
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="col-md-9 news__title">
+                    <a href="#"><span>Aliquam nibh</span></a>
+                    <p>Proin pharetra luctus diam,
+                        any scelerisque eros conval, lisumsan.
+                    </p>
+                </div>
+            </li>
+            <li class="col-md-4">
+                <div class="col-md-3 news__date">
+                    <p>21<br>Jan</p>
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="col-md-9 news__title">
+                    <a href="#"><span>Etiam dui eros</span></a>
+                    <p>Any scelerisque eros vallisjjih.
+                        Maecenas vehicula egestas natis.
+                    </p>
+                </div>
+            </li>
+            <li class="col-md-4">
+                <div class="col-md-3 news__date">
+                    <p>15<br>Feb</p>
+                    <span class="glyphicon glyphicon-comment"></span>
+                </div>
+                <div class="col-md-9 news__title">
+                    <a href="#"><span>uamnibh Edeto</span></a>
+                    <p>Ros convallisumsan. Maecenas vehicula egestas venenatis.
+                        Duis massa elit, auctor non.
+                    </p>
+                </div>
+            </li>
+        </div>
+    </div>
+</div>
+<a href="#" class="scrollup"><img src="img/scrollArrow.png"></a>
+<footer>
+    <div class="container">
+        <div class="col-md-6 copyright">
+            Trip &copy; 2018
+        </div>
+        <div class="col-md-6 right">
+            <a href="#"><img src="img/facebook.png"></a>
+            <a href="#"><img src="img/twitter.png"></a>
+            <a href="#"><img src="img/plus.png"></a>
+        </div>
+    </div>
+</footer>
+<!--<script src="js/jquery-3.3.1.min.js"></script>-->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
